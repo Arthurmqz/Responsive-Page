@@ -1,0 +1,368 @@
+/* --- General structures --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+nav {
+  list-style: none;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.btn {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 2px;
+  background-color: tomato;
+}
+hr {
+  width: 200px;
+  height: 1, 5px;
+  margin-bottom: 100px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 85px;
+}
+section h2,
+h3.title {
+  color: black;
+  text-transform: capitalize;
+  font: bold 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serifS;
+  margin-bottom: 35px;
+  text-align: center;
+}
+section p {
+  max-width: 850px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  line-height: 3;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serifS;
+}
+/* --- Header structures --- */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 100px 0;
+}
+header a {
+  color: rgba(206, 206, 206, 0.7);
+}
+header h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+header nav {
+  display: flex;
+}
+header nav li {
+  margin: 0 15px;
+  font-size: 2vh;
+}
+header nav li:first-child {
+  margin-left: 0;
+}
+header nav li:last-child {
+  margin-right: 0;
+}
+/* --- Section 1 structure --- */
+.sec-1 {
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  text-align: center;
+}
+.sec-1 .background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-image: url(images/hossein-farahani-pqJ21tErTgI-unsplash.jpg);
+  opacity: 80%;
+}
+
+.sec-1 h1 {
+  font: bold 60px 'Open Sans', sans-serif;
+  margin-top: 15%;
+  margin-bottom: 5%;
+}
+.sec-1 h3,
+h4 {
+  font: normal 25px 'Open Sans', sans-serif;
+  margin-bottom: 5%;
+}
+.sec-1 h4 {
+  font: normal 18px 'Open Sans', sans-serif;
+  margin-bottom: 5%;
+}
+.sec-1 h1,
+h3,
+h4 {
+  color: blanchedalmond;
+}
+.sec-1 a.btn {
+  padding: 20px 46px;
+}
+/* --- Video structures --- */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 70%;
+}
+.video-container::after {
+  display: block;
+  content: '';
+  padding-top: 56.25%;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* --- Section 2 structure--- */
+.sec-2 {
+  background-color: whitesmoke;
+}
+.sec-2 h2 {
+  font-size: 35px;
+}
+.sec-2 .grid li {
+  padding: 15px;
+
+  width: 45vw;
+  height: 25vh;
+  border-radius: 35px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+}
+.sec-2 .grid li.small {
+  flex-basis: 40%;
+}
+.sec-2 .grid li.medium.li {
+  flex-basis: 50%;
+}
+.sec-2 .grid li.large {
+  flex-basis: 60%;
+}
+/* --- Section 3 structure --- */
+.sec-3 {
+  background-color: rgba(245, 245, 245, 0.604);
+}
+.sec-3 h2 {
+  font-size: 35px;
+}
+.sec-3 h3 {
+  font-size: 25px;
+  color: black;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.sec-3 h3,
+p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serifS;
+}
+.sec-3 .grid ul {
+  padding: 0 30px;
+  flex-basis: 35%;
+}
+.sec-3 .grid ul i {
+  font-size: 55px;
+  color: rgb(46, 48, 48);
+  margin-bottom: 30px;
+}
+
+.sec-3 .grid ul h3 {
+  font-size: 25px;
+  color: aqua;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.sec-3 .grid ul p {
+  margin: 0;
+}
+/* --- Section 4 structure --- */
+.sec-4 {
+  background-color: whitesmoke;
+}
+.sec-4 h2 {
+  font-size: 35px;
+}
+.sec-4 .quote {
+  text-align: center;
+  width: 75%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 22px;
+  padding: 0;
+}
+.sec-4 .author {
+  font-size: 20px;
+  margin-bottom: 55px;
+}
+.sec-4 .author:last-child {
+  margin-bottom: 0;
+}
+/* --- Section 5 structures --- */
+.sec-5 {
+  background-color: whitesmoke;
+}
+.sec-5 h4 {
+  color: black;
+}
+.sec-5 form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 720px;
+  color: rgba(36, 36, 36, 0.665);
+}
+.sec-5 form .btn {
+  padding: 20px 40px;
+}
+/* --- Footer structures --- */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  padding: 60px 0;
+}
+footer ul {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+footer ul li {
+  margin: 0;
+}
+footer ul li:first-child {
+  margin-left: 0;
+}
+footer ul li:last-child {
+  margin-right: 0;
+}
+footer p {
+  font-size: 15px;
+  text-transform: uppercase;
+  color: aliceblue;
+  margin-bottom: 10px;
+}
+footer p a {
+  color: white;
+}
+/* --- Media Queries --- */
+@media (max-width: 1000px) {
+  section {
+    padding: 100px 50px;
+  }
+}
+@media (max-width: 700px) {
+  section {
+    padding: 80px 30px;
+  }
+}
+@media (max-width: 1000px) {
+  header {
+    padding: 20px 50px;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+  header h3 {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .sec-1 {
+    min-height: 600px;
+  }
+  .sec-1 h1 {
+    font-size: 48px;
+    margin-top: 45%;
+  }
+  .sec-1 h3 {
+    font-size: 24px;
+  }
+  .sec-1 a.btn {
+    padding: 15px 40px;
+  }
+}
+@media (max-width: 1000px) {
+  .sec-2 .grid li.small,
+  .sec-2 .grid li.large {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .sec-3 .grid li {
+    flex-basis: 70%;
+    margin-bottom: 70px;
+  }
+  .sec-3 .grid li:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 600px) {
+  .sec-3 .grid li {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 1000px) {
+  .sec-4 .quote {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .sec-4 .author {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .sec-5 .form input {
+    flex-basis: 100%;
+    margin: 0 0 22px 0;
+  }
+  .sec-5 p {
+    text-align: left;
+    padding: 0;
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    padding: 82px 16px;
+  }
+}
