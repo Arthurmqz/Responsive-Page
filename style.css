@@ -76,7 +76,7 @@ header nav {
   display: flex;
 }
 header nav li {
-  margin: 0 15px;
+  margin: 0 10px;
   font-size: 2vh;
 }
 header nav li:first-child {
